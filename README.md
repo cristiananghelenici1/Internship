@@ -1,1 +1,4 @@
-# Internship
+<?php
+echo "Computer";
+?>
+
