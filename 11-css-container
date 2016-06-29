@@ -1,0 +1,82 @@
+body{
+    margin: 20px;
+    font: 1em Arial;
+}
+
+.container{
+    background: #999;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}
+
+.container-inner{
+    background: #ccc;
+    margin: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+a{
+    display: block;
+    width: 300px ;
+    height: 100px ;
+    background: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE Html>
+<meta charset="utf-8">
+<title>CSS</title>
+<link rel="stylesheet" href="main.css">
+
+    <div class="container">s set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huh</div>
+
+

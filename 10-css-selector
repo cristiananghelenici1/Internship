@@ -1,0 +1,44 @@
+-----index.html-------
+
+<!DOCTYPE html>
+<html>
+<link>
+<meta charset="UTF-8">
+    <title>tutorial2</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="block">
+        <h1>zagolovoc</h1>
+        <p class="text">careva text</p>
+        <p class="text2">careva text</p>
+        <p class="text">careva text</p>
+        <p class="text2">careva text</p>
+    </div>
+
+    <div id="block2">
+        <h1>zagolovoc</h1>
+        <p class="text">careva text</p>
+        <p class="text2">careva text</p>
+        <p class="text">careva text</p>
+        <p class="text2">careva text</p>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+-----main.css------------
+
+#block .text2 {
+    background:orange;
+}

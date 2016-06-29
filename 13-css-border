@@ -1,0 +1,105 @@
+<!DOCTYPE Html>
+<meta charset="utf-8">
+<title>CSS</title>
+<link rel="stylesheet" href="main.css">
+
+<div class="container"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: #eee;
+
+    border: 3px solid #000;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000;
+    border-bottom-color: #000;
+
+}
+
+
+
+
+
+// border-radius:
+
+.container{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background: #666;
+
+    border-radius: 10px 20px 30px 40px;
+    
+    
+    border-bottom-right-radius: 10px 20px;
+    border-bottom-left-radius: 10px 20px;
+
+    border-top-right-radius: ;
+    border-top-left-radius: ;
+
+}
+
+
+
+
+
+
+// border-triungle
+
+.container{
+    display: inline-block;
+}
+.triungle-up{
+
+    width: 0;
+    height: 0;
+    border-top: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+
+}
+
+.triungle-down{
+
+    width: 0;
+    height: 0;
+
+    border-top: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

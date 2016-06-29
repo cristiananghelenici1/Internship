@@ -1,0 +1,58 @@
+<!DOCTYPE Html>
+<meta charset="utf-8">
+<title>CSS</title>
+<link rel="stylesheet" href="main.css">
+
+    <p>s set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huh</p>
+
+    <p class="big">s set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huhs set er  r ajk   aj jh
+     fakh ag hgh   ja shjksdf haj ghajk j j hga hgkfdsh g
+      jsdf huh</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background: #ccc;
+    font-family: "PT Sans", Arial, serif;
+    font-size: 14px;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    text-indent:30px;
+    line-height:40px;
+    word-spacing: 50px;
+
+    text-shadow: 0 1px 0 #eee , 3px 3px 3px #000;
+}
+
+.big{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+
