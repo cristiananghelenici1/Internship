@@ -1,0 +1,20 @@
+<?php
+    $start = microtime (true);
+    echo time ()."<br />";
+
+    echo microtime (true)."<br />";
+
+    echo "timpul lucrarii" .(microtime(true) - $start)."sec"."<br />";
+
+    echo $time = mktime (12 , 35 , 23 , 12 ,7 , 2007) . "<br />";   //returneaza sec di 1970
+
+    echo date ("Y-m-d H:i:s" , 1197023723);
+
+    $array = getdate($time);
+    print_r ($array);
+
+    echo "<br />".checkdate(01,05,2010);   // daca exista ziua asta = 1
+
+
+
+?>

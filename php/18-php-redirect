@@ -1,0 +1,12 @@
+<?php
+
+    header ("Location: http://google.com");
+    exit;                                       //dupa asta nus e face nimic
+
+    $abc = 57;
+    $abc++;
+echo abc;
+
+
+?>
+

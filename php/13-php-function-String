@@ -1,0 +1,22 @@
+<?php
+    $string = "This is example";
+
+    echo strlen($string)."<br />";                  //lungimea cite elemente
+    echo strpos($string , "uns")."<br />";           // daca exista secventa arata acita esa simbol este
+
+    if (strpos($string , "un") == false) echo "un nu este gasit";
+    else echo "un e gasit";
+
+    echo "<br />".substr($string , 3 , -2)."<br />";
+    echo str_replace(array("is", "ex") , array("abc" , "123") , $string)."<br />";
+
+    $str = "<b>XAXA</b>";
+    echo htmlspecialchars($str);
+
+    echo "<br />".strtolower($string)."<br />".strtoupper($string)."<br />";
+
+    echo md5("123")."<br />";
+
+    echo trim("   string  sd sd  ");
+
+?>

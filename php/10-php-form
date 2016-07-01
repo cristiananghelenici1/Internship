@@ -1,0 +1,52 @@
+------index.php-------------
+
+<?php
+    if(isset($_POST["done"])) {
+        if ($_POST["name"] == "") {
+            echo "introduceti numele.<a href='/'>corecteaza</a>";
+        } else {
+            header("Location:index.php");
+        }
+    }
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>prelucrarea formelor</title>
+</head>
+<body>
+
+    <form name="test" action="check.php" method="post">
+        <label> nume: </label><br />
+        <input type="text" name="name" placeholder="Nume" /><br />
+
+        <label> Email: </label><br />
+        <input type="text" name="email" placeholder="Email" /></br>
+
+        <label> mesaj: </label><br />
+        <textarea name="message" cols="40" rows="10"></textarea>
+        <br />
+
+        <input type="submit" name="done" value="Gata">
+    </form>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+----------check.php-----------------
+
+<?php
+    if($_POST["name"] == "") {echo "introduceti numele.<a href='index.php'>corecteaza</a>";
+}
+    else {header("Location:index.php");}
+?>

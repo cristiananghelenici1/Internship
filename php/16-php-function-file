@@ -1,0 +1,28 @@
+
+<?php
+
+//    $file = fopen ("a.txt" , "a+t");
+//    fwrite($file , "Exemple\nText\nNext");
+//    fclose($file);
+
+    $file = fopen ("a.txt" , "r+t");
+
+    while(!feof($file)) {                      //feof la null da true
+        echo fread($file, 1)."<br />";         // fread citeste cite un element din txt
+    }
+
+    fseek ($file, 8);                           //duce cursoru la 0 adica la inceput sau une vrei
+    echo fread($file, 1)."<br />";
+
+    fclose($file);
+
+    echo "--------------------------------------"."<br />";
+    file_put_contents("c.txt", "    TEST TEST TEST");
+    echo file_get_contents("c.txt")."<br/>";
+    echo file_exists("a.txt")."<br />";
+    echo filesize("c.txt")."<br />";
+
+    //rename("b.txt","c.txt");          //schimba denumirea
+    //unlink ("c.txt");                   //sterge
+
+?>

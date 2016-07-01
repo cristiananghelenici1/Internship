@@ -1,0 +1,26 @@
+<?php
+
+$x = 15;
+if(isset($x) ) echo "Variabila exista";
+else echo "variabila nu exista";
+
+unset ($x);
+echo "<br />";
+
+$X = 15;
+if(isset($x) ) echo "Variabila exista";
+else echo "variabila nu exista"."<br />";
+
+$x = "15";
+$bool = false;
+$null ;
+    echo "Is Numeric ".is_numeric($x)."<br />";
+    echo "Is Integer ".is_integer($x)."<br />";
+    echo "Is Double ".is_double($x)."<br />";
+    echo "Is String ".is_string($x)."<br />";
+    echo "Is Boolean ".is_bool($bool)."<br />";
+    echo "Is Scalar ".is_scalar($bool)."<br />";
+    echo "Is Null ".is_null($null)."<br />";
+    echo "Is Array ".is_array($null)."<br />";
+    echo "Type ".gettype($null)."<br />";
+?>
