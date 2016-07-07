@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            height: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Nume </th>
+                <th>Prenume</th>
+                <th>Email</th>
+                <th>Data inregistrarii</th>
+            </tr>
+
+<?php
+    function printresult($result_set){
+        while(($row = $result_set-> fetch_assoc() ) != false)   {
+            //echo $row["id"]." ".$row["nume_prenume"]." ".$row["idnp"]." ".$row["finantare"]." "
+            //.$row["media"]." ".$row["anul_de_studii"]." ".$row["cazare"];
+            //echo $row["Nume_Prenume"];
+?>
+        <tr>
+                <td><?= $row["id"]; ?></td>
+                <td><?= $row["firstname"]; ?></td>
+                <td><?= $row["lastname"]; ?></td>
+                <td><?= $row["email"]; ?></td>
+                <td><?= $row["reg_date"]; ?></td>
+            </tr>
+<?php
+        }
+        //echo "<br />"."numarul inscrierilor" .$result_set->num_rows."<br />-----------------------------";
+    }
+    
+
+    $mysqli = new mysqli ("localhost", "root" , "christy0202" , "university");
+    $mysqli->query ("SET NAMES 'UTF8'");
+
+    $result_set = $mysqli->query("SELECT * FROM `students`");
+    printResult ($result_set);
+
+    $mysqli->close ();
+
+?>
+        </table>
+
+    </div>
+
+     <form action="insert.php">
+          <input type="submit" value="Adauga">
+
+     </form
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>table</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            height: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+
+
+    <form action="insert.php" method="POST">
+        <input type="text" name="firstname" placeholder="Nume">
+        <input type="text" name="lastname"  placeholder="Prenume">
+        <input type="text" name="email" placeholder="email">
+        <input type="submit" value="trimite">
+     </form>
+
+
+
+   <!-- //$firstname = $_POST['firstname'];
+    //$lastname = $_POST['lastname'];
+    //$email = $_POST['email']; -->
+
+<?php
+
+   
+    //$mysqli = new mysqli ("localhost", "root" , "christy0202" , "university");
+
+var_dump($_POST);
+
+if (!empty($_POST)) {
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "christy0202";
+    $dbname = "university";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+
+        $sql = "INSERT INTO students (firstname, lastname, email)
+        VALUES ('" . $_POST['firstname'] . "', '" . $_POST['lastname'] . "', '" . $_POST['email'] . "')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+$conn->close();
+}
+
+?>
+
+</body>
+</html>
